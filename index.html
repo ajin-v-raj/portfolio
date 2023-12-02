@@ -160,7 +160,7 @@
       </div></div>
         </section>
         <section id="skills" class="full-height pt-5">
-          <div class="container pt-5 ">
+          <div class="container pt-5">
             <div class="position-relative d-flex align-items-center justify-content-center">
               <h1 class="display-1 text-uppercase" id="bg-skills">SKILLS</h1>
               <h1 class="position-absolute text-uppercase text-light">SKILLS</h1>
@@ -309,20 +309,23 @@
           <h1 class="display-1 text-uppercase" id="bg-contact">CONTACT</h1>
           <h1 class="position-absolute text-uppercase text-light">CONTACT</h1>
       </div><br><br><br><br><br>
-          <div class="col-lg-8 col-md-12 col-sm-12 justify-content-center align-items-center mx-auto" id="contform">
+      <form method="post" action="mail" onsubmit="return validateForm()">
+        <div class="col-lg-8 col-md-12 col-sm-12 justify-content-center align-items-center mx-auto" id="contform">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Name</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nameInput" name="name" placeholder="Enter your name" required>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" name="email" placeholder="name@example.com" required>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Type your message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="messageTextarea" class="form-label">Type your message</label>
+                <textarea class="form-control" id="messageTextarea" name="message" rows="3" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
             
              
               
@@ -337,7 +340,7 @@
   </section>
   
       </div>
-      <script src="/script.js"></script>
+      <script src="script.js"></script>
       <script>
         
       </script>
