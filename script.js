@@ -81,29 +81,27 @@
 
     if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
         alert('Please fill in all required fields.');
-        return false; // Prevent form submission
+        return false; 
     }
 
-    return true; // Allow form submission
+    return true; 
 }
   
 
-        // Text to be displayed
+       
 const text = "Proficient Python Developer with a comprehensive skill set spanning Python, Django, React, MySQL, HTML5, JavaScript, Bootstrap, CSS, and AJAX.";
 
-        // Get the container element
 const container = document.getElementById("typing-container");
 
 function typeText(index) {
             container.textContent = text.slice(0, index) + '|';
             if (index < text.length) {
-                setTimeout(() => typeText(index + 1), 50); // Adjust typing speed (milliseconds)
+                setTimeout(() => typeText(index + 1), 50); 
             } else {
-                container.textContent = text; // Remove the cursor when typing is complete
+                container.textContent = text; 
             }
         }
 
-        // Start the typing effect after the DOM has fully loaded
         document.addEventListener('DOMContentLoaded', function() {
             typeText(0);
         });
