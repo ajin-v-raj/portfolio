@@ -135,10 +135,13 @@ function typeText(index) {
           return true; // Allow form submission
       }
       
-      function validateSubmit() {
-          // Call sendmail() and return the Promise
-          return sendmail();
-      }
-      
+      function submitForm() {
+        if (validateForm()) {
+            sendmail().then(() => {
+                // Optionally, you can perform additional actions after email is sent.
+            });
+        }
+    }
+    
 
     
