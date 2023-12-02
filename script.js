@@ -89,7 +89,7 @@
   
 
         // Text to be displayed
-const text = "Certified Python Developer having extensive knowledge Python ,Django ,React ,Mysql ,HTML5, JavaScript ,Bootstrap ,CSS and AJAX";
+const text = "Proficient Python Developer with a comprehensive skill set spanning Python, Django, React, MySQL, HTML5, JavaScript, Bootstrap, CSS, and AJAX.";
 
         // Get the container element
 const container = document.getElementById("typing-container");
