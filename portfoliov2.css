@@ -432,6 +432,14 @@ pre{
     opacity: 0; 
     transition: opacity 0.5s ease-in-out;
 }
+#typing-container {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    
+    border-right: 2px solid #000000;
+    color: aliceblue;
+    text-align: left;
+}
 
 .animated {
     animation: action 2s ease-in-out; 

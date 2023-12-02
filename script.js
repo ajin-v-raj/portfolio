@@ -88,6 +88,27 @@
 }
   
 
+        // Text to be displayed
+const text = "Certified Python Developer having extensive knowledge Python ,Django ,React ,Mysql ,HTML5, JavaScript ,Bootstrap ,CSS and AJAX";
+
+        // Get the container element
+const container = document.getElementById("typing-container");
+
+function typeText(index) {
+            container.textContent = text.slice(0, index) + '|';
+            if (index < text.length) {
+                setTimeout(() => typeText(index + 1), 50); // Adjust typing speed (milliseconds)
+            } else {
+                container.textContent = text; // Remove the cursor when typing is complete
+            }
+        }
+
+        // Start the typing effect after the DOM has fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            typeText(0);
+        });
+    
+
   
 
     
