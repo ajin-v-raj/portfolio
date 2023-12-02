@@ -36,6 +36,17 @@ pre{
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .navbar-brand {
+    float: right;  
+    display: none;
+    }
+
+    
+
+    
+  }
+
 
 .full-height{
     min-height: 100vh;
@@ -123,7 +134,6 @@ pre{
     #ajinpic:hover{
         transform: scale(1.09);
         transition:400ms;
-        border: 5px solid white;
         
         
     }
@@ -182,7 +192,6 @@ pre{
     justify-content: center;
     position: absolute;
     opacity: 0.1;
-    padding-top: 10px;
 }
 #bg-contact{
     font-size: 10vw;
@@ -240,6 +249,7 @@ pre{
     #details{
         padding: 3%;
     }
+    
 }
 .progress{
     
@@ -284,6 +294,57 @@ pre{
         margin-left: 0%;
         
         
+    }
+    #bg-about{
+        font-size: 10vw;
+        transform: scaley(2);
+        justify-content: center;
+        position: absolute;
+        opacity: 0.1;
+    }
+    #bg-services{
+        font-size: 10vw;
+        transform: scaley(2);
+        justify-content: center;
+        position: absolute;
+        opacity: 0.1;
+    }
+    #bg-projects{
+        font-size: 10vw;
+        transform: scaley(2);
+        justify-content: center;
+        position: absolute;
+        opacity: 0.1;
+        
+    }
+    #bg-contact{
+        font-size: 10vw;
+        transform: scaley(2);
+        justify-content: center;
+        position: absolute;
+        opacity: 0.1;
+    }
+    #bg-quality{
+        font-size: 10vw;
+        transform: scaley(2);
+        justify-content: center;
+        position: absolute;
+        opacity: 0.1;
+    }
+    #bg-skills{
+        font-size: 10vw;
+        transform: scaley(2);
+        justify-content: center;
+        position: absolute;
+        opacity: 0.1;
+    }
+    #contform{
+        
+        width: 80%;
+    }
+    #icons{
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 @media (min-width:768px){
