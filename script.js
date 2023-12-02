@@ -15,6 +15,12 @@
 
     
   });
+  if (window.innerWidth <= 1024) {
+    window.addEventListener('scroll', function() {
+        // Hide the detail_txt element when scrolling on small screens
+        detailTxtElement.style.display = 'block';
+  });
+}
   detailsElement1.addEventListener('mouseover', function() {
     // Show the detail_txt element when details is hovered
     detailTxtElement1.style.display = 'block';
@@ -26,6 +32,12 @@
 
     
   });
+  if (window.innerWidth <= 1024) {
+    window.addEventListener('scroll', function() {
+        // Hide the detail_txt element when scrolling on small screens
+        detailTxtElement1.style.display = 'block';
+  });
+}
 
 
 
