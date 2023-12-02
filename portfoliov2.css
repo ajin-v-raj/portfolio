@@ -21,15 +21,19 @@ pre{
     color: aqua;
 }
 .nav-link{
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 
 
-@media (max-width:768px){
-    #content{
-        padding-top: 100px;
-        
+@media (max-width:425px){
+    
+    #about-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #education{
+        width: 100%;
     }
 }
 
@@ -190,13 +194,14 @@ pre{
     position: absolute;
     opacity: 0.1;
 }
+
+    
 #education{
     width: 45%;
     height: 80%;
     display: flex;
     flex-direction: column;
     float: left;
-    
 }
 #experience{
     float: left;
@@ -206,7 +211,8 @@ pre{
     flex-direction: column;
     float: left;
     margin:auto;
-    margin-left: 5%;
+    margin-left: 0%;
+    
 }
 #about-content{
     width: 100%;
@@ -244,6 +250,34 @@ pre{
     #bar{
         flex-direction: column;
         align-items: center;
+        
+        
+    }
+    #about-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        
+    }
+    #education{
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-top: 40px;
+    }
+    #experience{
+        float: left;
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin:auto;
+        margin-left: 0%;
         
         
     }
