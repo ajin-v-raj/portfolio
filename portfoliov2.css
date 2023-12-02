@@ -79,7 +79,7 @@ pre{
     margin: 2%;
     
     width: 18em;
-    height: 26em;
+    height:30em;
 }
 @media(max-width:768px){
     #details{
@@ -371,10 +371,7 @@ pre{
         
         width: 80%;
     }
-    #icons{
-        display: flex;
-        justify-content: space-evenly;
-    }
+    
 }
 @media (min-width:768px){
     #bar{
