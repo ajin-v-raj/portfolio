@@ -129,8 +129,12 @@ pre{
     }
     
     
+
+
 #hire:hover{
-    background-color: rgb(7, 58, 148);
+    transform: scale(1.08);
+    transition:300ms;
+    background-color:rgb(7, 58, 148);
     color: aliceblue;
 }
 
@@ -369,9 +373,3 @@ pre{
 }
 
 
-#hire:hover{
-    transform: scale(1.08);
-    transition:300ms;
-    background-color:rgb(7, 58, 148);
-    color: aliceblue;
-}
