@@ -405,6 +405,10 @@ pre{
         margin-top: 4%;
         width: 90%;
     }
+    #typing-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 #services-info{
     display: flex;
@@ -447,6 +451,7 @@ pre{
     color: aliceblue;
     text-align: left;
 }
+
 
 .animated {
     animation: action 2s ease-in-out; 

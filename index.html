@@ -333,7 +333,7 @@
           <h1 class="display-1 text-uppercase" id="bg-contact">CONTACT</h1>
           <h1 class="position-absolute text-uppercase text-light">CONTACT</h1>
       </div><br><br><br><br><br>
-      <form onsubmit="return validatesubmit();reset();return false;">
+      <form onsubmit="return validatesubmit();return false;">
         <div class="col-lg-8 col-md-12 col-sm-12 justify-content-center align-items-center mx-auto" id="contform">
             <div class="mb-3">
                 <label for="nameInput" class="form-label">Name</label>
@@ -347,7 +347,7 @@
                 <label for="messageTextarea" class="form-label">Type your message</label>
                 <textarea class="form-control" id="messageTextarea" name="message" rows="3" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" value="submit">Submit</button>
         </div>
     </form>
             
