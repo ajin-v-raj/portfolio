@@ -377,7 +377,8 @@
             From: "johnwick60735@gmail.com",
             Subject: "This is the subject",
             Body: messageBody
-          }).then(message => alert(message));
+          }).then(message => swal("Success!", "Submitted successfully!", "success"));
+;
     
           // Prevent the form from submitting in the traditional way
           return false;
