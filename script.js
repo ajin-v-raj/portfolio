@@ -95,53 +95,6 @@ function typeText(index) {
         });
     
 
-        function sendmail() {
-          var name = document.getElementById('nameInput').value;
-          var mail = document.getElementById('emailInput').value;
-          var msg = document.getElementById('messageTextarea').value;
-          var sub = 'Name: ' + name;
-          var msgbody = 'Name: ' + name + '<br> Mail: ' + mail + '<br> Message: ' + msg;
-      
-          // Return the Promise from Email.send()
-          return Email.send({
-              Host: "smtp.elasticemail.com",
-              Username: "ajinvrj@gmail.com",
-              Password: "6C4D933A9A5AB6211D52499D2CC4B82DD195",
-              To: 'ajinvrj@gmail.com',
-              From: mail,
-              Subject: sub,
-              Body: msgbody
-          }).then(
-              message => {
-                  if (message === 'OK') {
-                      swal("Good job!", "Mail Sent Successfully!", "success");
-                  } else {
-                      swal("Good job!", "Mail Not Sent!", "error");
-                  }
-              }
-          );
-      }
-      
-      function validateForm() {
-          var name = document.getElementById('nameInput').value;
-          var email = document.getElementById('emailInput').value;
-          var message = document.getElementById('messageTextarea').value;
-      
-          if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-              alert('Please fill in all required fields.');
-              return false; // Prevent form submission
-          }
-      
-          return true; // Allow form submission
-      }
-      
-      function submitForm() {
-        if (validateForm()) {
-            sendmail().then(() => {
-                // Optionally, you can perform additional actions after email is sent.
-            });
-        }
-    }
-    
-
-    
+        
+        
+        

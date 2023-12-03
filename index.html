@@ -324,23 +324,23 @@
           <h1 class="display-1 text-uppercase" id="bg-contact">CONTACT</h1>
           <h1 class="position-absolute text-uppercase text-light">CONTACT</h1>
       </div><br><br><br><br><br>
-      <form onsubmit="return submitForm();return false;">
+      <form onsubmit="return emailSend()">
         <div class="col-lg-8 col-md-12 col-sm-12 justify-content-center align-items-center mx-auto" id="contform">
-            <div class="mb-3">
-                <label for="nameInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameInput" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="mb-3">
-                <label for="emailInput" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="emailInput" name="email" placeholder="name@example.com" required>
-            </div>
-            <div class="mb-3">
-                <label for="messageTextarea" class="form-label">Type your message</label>
-                <textarea class="form-control" id="messageTextarea" name="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Enter your name" required autocomplete="name">
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput" name="email" placeholder="name@example.com" required autocomplete="email">
+          </div>
+          <div class="mb-3">
+            <label for="messageTextarea" class="form-label">Type your message</label>
+            <textarea type="text" class="form-control" id="messageTextarea" name="message" rows="3" required autocomplete="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-    </form>
+      </form>
             
              
               
@@ -354,7 +354,7 @@
       
   </section>
   <footer style="margin-bottom: 0%; padding-bottom: 0%;">
-    <h6 style="margin: 0; padding: 0;"><b><center>AJIN V RAJ</center></b></h6>
+    <h6 style="margin: 0; padding: 0;"><pre><b><center>&copy; 2023      AJIN V RAJ</center></b></pre></h6>
 </footer>
 
   
@@ -362,6 +362,28 @@
       <script src="script.js"></script>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script>
+        function emailSend() {
+          var userName = document.getElementById('nameInput').value;
+          var msg = document.getElementById('messageTextarea').value;
+          var email = document.getElementById('emailInput').value;
+          var messageBody = "Name: " + userName + "\nEmail: " + email + "\nMessage: " + msg;
+    
+          Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "johnwick60735@gmail.com",
+            Password: "93657610E206C92897466A976539E294A091",
+            To: "johnwick60735@gmail.com",
+            From: "johnwick60735@gmail.com",
+            Subject: "This is the subject",
+            Body: messageBody
+          }).then(message => alert(message));
+    
+          // Prevent the form from submitting in the traditional way
+          return false;
+        }
+      </script>
+    
 
 
     
